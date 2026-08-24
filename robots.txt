@@ -1,0 +1,21 @@
+# robots.txt — Najwan Zaki Portfolio
+User-agent: *
+Allow: /
+Allow: /assets/docs/portfolio-ats.pdf
+Allow: /assets/images/
+Allow: /assets/styles/
+Allow: /assets/js/
+
+# Disallow sensitive & admin paths
+Disallow: /admin/
+Disallow: /assets/admin/
+Disallow: /assets/ai-service/
+Disallow: /*.json$
+Disallow: /*.md$
+Disallow: /*.sql$
+
+# Crawl-delay for aggressive bots
+Crawl-delay: 10
+
+# Security Contact
+# https://zakyy.dev/.well-known/security.txt

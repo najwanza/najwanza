@@ -1,0 +1,6 @@
+Contact: mailto:najwanzaki1230@gmail.com
+Expires: 2028-12-31T23:59:59.000Z
+Preferred-Languages: id, en
+Canonical: https://zakyy.dev/.well-known/security.txt
+Policy: https://zakyy.dev
+Acknowledgments: https://zakyy.dev

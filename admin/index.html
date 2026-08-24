@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin — Zakyy.dev</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link rel="alternate icon" type="image/x-icon" href="../assets/images/favicon.svg">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    
+    <!-- Security Hardening & Defense Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=()">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://unpkg.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://unpkg.com data:; img-src 'self' data: blob: https://images.unsplash.com https://raw.githubusercontent.com https://cdn.jsdelivr.net; connect-src 'self' data: blob:; frame-ancestors 'self';">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- React 18 & ReactDOM CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <!-- Font Awesome & Boxicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Admin Modular Styles -->
+    <link rel="stylesheet" href="../assets/admin/admin.css">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 0;
+            background: #050811;
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+            color: #f0f6fc;
+            overflow: hidden;
+        }
+
+        /* Animated background */
+        .admin-standalone-bg {
+            position: fixed;
+            inset: 0;
+            background: #050811;
+            overflow: hidden;
+        }
+        .admin-standalone-bg::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+            top: -200px;
+            left: -100px;
+            animation: bgFloat1 8s ease-in-out infinite alternate;
+        }
+        .admin-standalone-bg::after {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.12) 0%, transparent 70%);
+            bottom: -200px;
+            right: -100px;
+            animation: bgFloat2 10s ease-in-out infinite alternate;
+        }
+        @keyframes bgFloat1 {
+            from { transform: translate(0, 0) scale(1); }
+            to { transform: translate(60px, 40px) scale(1.15); }
+        }
+        @keyframes bgFloat2 {
+            from { transform: translate(0, 0) scale(1); }
+            to { transform: translate(-40px, -60px) scale(1.1); }
+        }
+
+        /* Standalone admin root fills the screen */
+        #admin-dashboard-root {
+            position: fixed !important;
+            inset: 0 !important;
+            z-index: 10 !important;
+            pointer-events: auto !important;
+        }
+
+        /* Force the backdrop always visible in standalone mode */
+        .admin-modal-backdrop {
+            opacity: 1 !important;
+            visibility: visible !important;
+            pointer-events: auto !important;
+            background: transparent !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+        }
+
+        .admin-modal-window {
+            transform: scale(1) translateY(0) !important;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.9), 0 0 60px rgba(124, 58, 237, 0.3) !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated background layer -->
+    <div class="admin-standalone-bg"></div>
+
+    <!-- Admin React Root -->
+    <div id="admin-dashboard-root"></div>
+
+    <!-- Admin Logic -->
+    <script src="../assets/admin/admin.js"></script>
+
+    <script>
+        // Auto-open the dashboard after React mounts
+        (function waitAndOpen() {
+            if (typeof window.openAdminDashboard === 'function') {
+                window.openAdminDashboard();
+            } else {
+                setTimeout(waitAndOpen, 80);
+            }
+        })();
+    </script>
+</body>
+</html>

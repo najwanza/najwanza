@@ -1,0 +1,200 @@
+/* ==========================================================================
+   HIDDEN ADMIN DASHBOARD STYLES - REACT 18 & TAILWIND INTEGRATION
+   Theme: Tokyo Night / IDE Surface Glassmorphism
+   Author: Najwan Zaki
+   Fixes: Desktop Cursor Pointer-Events & Full Keyboard/Mouse Accessibility
+   Features: Cyber Security Login Screen & Photo Uploader Previews
+   ========================================================================== */
+
+/* Root Container - Transparent to clicks when closed */
+#admin-dashboard-root {
+    position: fixed;
+    inset: 0;
+    z-index: 9999999;
+    pointer-events: none;
+    display: block;
+}
+
+#admin-dashboard-root.active {
+    pointer-events: auto !important;
+}
+
+/* Modal Backdrop */
+.admin-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(5, 8, 17, 0.88);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 9999999;
+}
+
+.admin-modal-backdrop.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto !important;
+}
+
+/* Desktop Cursor Fix: Restore standard cursor when Admin Dashboard is Open */
+body.admin-dashboard-open {
+    cursor: default !important;
+}
+
+body.admin-dashboard-open .cursor-dot-dev,
+body.admin-dashboard-open .cursor-ring-dev {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+.admin-modal-backdrop,
+.admin-modal-backdrop * {
+    cursor: default !important;
+}
+
+.admin-modal-backdrop button,
+.admin-modal-backdrop a,
+.admin-modal-backdrop [role="button"],
+.admin-modal-backdrop .cursor-pointer,
+.admin-modal-backdrop input[type="checkbox"],
+.admin-modal-backdrop select {
+    cursor: pointer !important;
+}
+
+.admin-modal-backdrop input[type="text"],
+.admin-modal-backdrop input[type="password"],
+.admin-modal-backdrop input[type="number"],
+.admin-modal-backdrop textarea {
+    cursor: text !important;
+}
+
+/* Modal Window Container */
+.admin-modal-window {
+    width: 100%;
+    max-width: 920px;
+    max-height: 90vh;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 18px;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.95), 0 0 50px rgba(168, 85, 247, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: scale(0.95) translateY(20px);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: auto !important;
+}
+
+.admin-modal-backdrop.open .admin-modal-window {
+    transform: scale(1) translateY(0);
+}
+
+/* Custom Scrollbar in Admin Modal */
+.admin-modal-window ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.admin-modal-window ::-webkit-scrollbar-track {
+    background: rgba(13, 17, 23, 0.6);
+}
+
+.admin-modal-window ::-webkit-scrollbar-thumb {
+    background: #30363d;
+    border-radius: 9999px;
+}
+
+.admin-modal-window ::-webkit-scrollbar-thumb:hover {
+    background: #8b949e;
+}
+
+/* Toggle Switch Styles */
+.admin-toggle-track {
+    width: 44px;
+    height: 24px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    transition: background-color 0.25s ease, justify-content 0.25s ease;
+}
+
+.admin-toggle-track.active {
+    background: #0284c7;
+    justify-content: flex-end;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+}
+
+.admin-toggle-track.inactive {
+    background: #374151;
+    justify-content: flex-start;
+}
+
+.admin-toggle-thumb {
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease;
+}
+
+/* Custom Animation for Header Pulse */
+@keyframes adminPulse {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(192, 132, 252, 0.7);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(192, 132, 252, 0.95);
+        transform: scale(1.1);
+    }
+}
+
+.admin-badge-pulse {
+    animation: adminPulse 2s infinite ease-in-out;
+}
+
+/* Login Shake Animation on Error */
+@keyframes loginShake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-8px); }
+    40%, 80% { transform: translateX(8px); }
+}
+
+.admin-login-shake {
+    animation: loginShake 0.4s ease-in-out;
+}
+
+/* Photo Preview Box */
+.admin-photo-card {
+    background: rgba(13, 17, 23, 0.75);
+    border: 1px solid rgba(48, 54, 61, 0.9);
+    border-radius: 12px;
+    padding: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-photo-card:hover {
+    border-color: rgba(56, 189, 248, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.admin-photo-thumbnail {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #161b22;
+    border: 1px solid #30363d;
+}
