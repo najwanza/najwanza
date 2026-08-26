@@ -1,0 +1,34 @@
+{
+  "tag": "Showcase",
+  "title": "Selected Developer Projects",
+  "desc": "Proyek-proyek frontend yang dikembangkan dengan fokus pada clean code dan interaktivitas.",
+  "projects": [
+    {
+      "folder": "/projects/portfolio-v2",
+      "status": "Production",
+      "tags": ["HTML5", "CSS", "JavaScript", "Vibe Coding"],
+      "title": "Portfolio Website",
+      "desc": "Website portofolio interaktif bergaya platform pengembang dengan syntax highlighting, 3D Parallax Tilt, matriks perbandingan, dan dashboard admin real-time.",
+      "liveUrl": "https://najwanza.github.io/najwanzaa/",
+      "sourceUrl": "https://github.com/Zakyyii"
+    },
+    {
+      "folder": "/projects/interactive-webapp",
+      "status": "Ready",
+      "tags": ["HTML5", "CSS"],
+      "title": "Website pertama",
+      "desc": "Website pertama sebagai bahan ajar melatih saya untuk HTML5 dan CSS.",
+      "liveUrl": "https://github.com/Zakyyii",
+      "sourceUrl": "https://github.com/Zakyyii"
+    },
+    {
+      "folder": "/projects/landing-page-v1",
+      "status": "Ready",
+      "tags": ["UI/UX", "Tailwind CSS", "SEO"],
+      "title": "Landing Page Project",
+      "desc": "Proyek eksplorasi desain modern dengan fokus kecepatan responsif dan pengalaman visual interaktif.",
+      "liveUrl": "https://github.com/Zakyyii",
+      "sourceUrl": "https://github.com/Zakyyii"
+    }
+  ]
+}

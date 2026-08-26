@@ -59,6 +59,33 @@
     --radius-lg: 16px;
     --radius-xl: 22px;
     --radius-full: 9999px;
+    
+    /* Performance Optimizations */
+    --will-change: transform, opacity;
+
+    /* Glassmorphism Tokens */
+    --glass-bg: rgba(13, 17, 23, 0.65);
+    --glass-bg-hover: rgba(22, 27, 34, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-border-hover: rgba(56, 189, 248, 0.3);
+    --glass-blur: blur(12px);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Glassmorphism Utility Class */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-panel:hover {
+    background: var(--glass-bg-hover);
+    border-color: var(--glass-border-hover);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.45);
 }
 
 /* ==========================================================================
@@ -68,6 +95,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    will-change: auto;
 }
 
 html {
@@ -76,6 +104,9 @@ html {
     font-size: 16px;
     background-color: var(--bg-ide-canvas);
     color-scheme: dark;
+    /* Performance */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 body {
@@ -312,10 +343,10 @@ body {
     left: 0;
     width: 100%;
     height: 64px;
-    background: rgba(13, 17, 23, 0.85);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid var(--border-ide);
+    background: rgba(13, 17, 23, 0.65);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -1588,45 +1619,125 @@ textarea.dev-form-control {
 }
 
 /* ==========================================================================
-   SCROLL REVEAL ANIMATIONS
+   BIDIRECTIONAL PARALLAX SCROLL REVEAL & EXIT ANIMATION SYSTEM
    ========================================================================== */
+.parallax-item,
 .reveal-on-scroll {
     opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.65s var(--ease-out), transform 0.65s var(--ease-out);
+    transform: translate3d(0, 52px, 0) scale(0.96);
+    transform-origin: center bottom;
+    transition: opacity 0.65s var(--ease-out), transform 0.65s var(--ease-out), filter 0.65s var(--ease-out);
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
-.reveal-on-scroll.revealed {
+/* In-View (Revealed) State: Emerges when scrolling down or in viewport */
+.parallax-item.in-view,
+.parallax-item.revealed,
+.reveal-on-scroll.revealed,
+.reveal-on-scroll.in-view {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0px);
 }
 
-.reveal-on-scroll.delay-1 { transition-delay: 0.1s; }
-.reveal-on-scroll.delay-2 { transition-delay: 0.2s; }
-.reveal-on-scroll.delay-3 { transition-delay: 0.3s; }
-.reveal-on-scroll.delay-4 { transition-delay: 0.4s; }
-.reveal-on-scroll.delay-5 { transition-delay: 0.5s; }
-
-.reveal-left {
+/* Exit-Down State: Disappears smoothly when scrolling back up */
+.parallax-item.exit-down,
+.reveal-on-scroll.exit-down {
     opacity: 0;
-    transform: translateX(-40px);
+    transform: translate3d(0, 56px, 0) scale(0.95);
+    filter: blur(2px);
+    transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out), filter 0.5s var(--ease-out);
+}
+
+/* Exit-Up State: Subtle drift when scrolled far above */
+.parallax-item.exit-up,
+.reveal-on-scroll.exit-up {
+    opacity: 0.2;
+    transform: translate3d(0, -35px, 0) scale(0.97);
+    transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+}
+
+/* Directional Parallax Animations */
+.reveal-left,
+.parallax-left {
+    opacity: 0;
+    transform: translate3d(-50px, 20px, 0) scale(0.96);
+    transition: opacity 0.65s var(--ease-out), transform 0.65s var(--ease-out);
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+}
+.reveal-left.revealed,
+.reveal-left.in-view,
+.parallax-left.in-view,
+.parallax-left.revealed {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+}
+.reveal-left.exit-down,
+.parallax-left.exit-down {
+    opacity: 0;
+    transform: translate3d(-40px, 35px, 0) scale(0.95);
+}
+
+.reveal-right,
+.parallax-right {
+    opacity: 0;
+    transform: translate3d(50px, 20px, 0) scale(0.96);
+    transition: opacity 0.65s var(--ease-out), transform 0.65s var(--ease-out);
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+}
+.reveal-right.revealed,
+.reveal-right.in-view,
+.parallax-right.in-view,
+.parallax-right.revealed {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+}
+.reveal-right.exit-down,
+.parallax-right.exit-down {
+    opacity: 0;
+    transform: translate3d(40px, 35px, 0) scale(0.95);
+}
+
+.reveal-scale,
+.parallax-scale {
+    opacity: 0;
+    transform: translate3d(0, 35px, 0) scale(0.90);
+    transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+}
+.reveal-scale.revealed,
+.reveal-scale.in-view,
+.parallax-scale.in-view,
+.parallax-scale.revealed {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+}
+.reveal-scale.exit-down,
+.parallax-scale.exit-down {
+    opacity: 0;
+    transform: translate3d(0, 45px, 0) scale(0.90);
+}
+
+/* Stagger Delays for Fluid Cascading Waves */
+.delay-1, [data-delay="1"] { transition-delay: 0.07s; }
+.delay-2, [data-delay="2"] { transition-delay: 0.14s; }
+.delay-3, [data-delay="3"] { transition-delay: 0.21s; }
+.delay-4, [data-delay="4"] { transition-delay: 0.28s; }
+.delay-5, [data-delay="5"] { transition-delay: 0.35s; }
+.delay-6, [data-delay="6"] { transition-delay: 0.42s; }
+.delay-7, [data-delay="7"] { transition-delay: 0.49s; }
+.delay-8, [data-delay="8"] { transition-delay: 0.56s; }
+
+/* Smooth Section Header Transitions */
+.dev-section-header {
     transition: opacity 0.65s var(--ease-out), transform 0.65s var(--ease-out);
 }
-.reveal-left.revealed { opacity: 1; transform: translateX(0); }
 
-.reveal-right {
-    opacity: 0;
-    transform: translateX(40px);
-    transition: opacity 0.65s var(--ease-out), transform 0.65s var(--ease-out);
-}
-.reveal-right.revealed { opacity: 1; transform: translateX(0); }
-
-.reveal-scale {
-    opacity: 0;
-    transform: scale(0.88);
-    transition: opacity 0.65s var(--ease-out), transform 0.65s var(--ease-out);
-}
-.reveal-scale.revealed { opacity: 1; transform: scale(1); }
 
 /* ==========================================================================
    TYPEWRITER CURSOR BLINK

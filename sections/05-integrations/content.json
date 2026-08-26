@@ -1,0 +1,13 @@
+{
+  "tag": "Ecosystem",
+  "title": "Integrated Toolchain & Stack",
+  "desc": "Teknologi dan perangkat pengembang terpercaya yang digunakan untuk membangun produk digital berkualitas tinggi.",
+  "tools": [
+    { "name": "HTML5", "role": "Structure & Semantic", "icon": "bx bxl-html5", "color": "#e34f26" },
+    { "name": "CSS3", "role": "Styling & Motion", "icon": "bx bxl-css3", "color": "#0ea5e9" },
+    { "name": "JavaScript", "role": "Logic & ES6+", "icon": "bx bxl-javascript", "color": "#f7df1e" },
+    { "name": "GitHub", "role": "Code Repo & CI/CD", "icon": "bx bxl-github", "color": "#f0f6fc" },
+    { "name": "Figma", "role": "UI/UX Design", "icon": "bx bxl-figma", "color": "#a259ff" },
+    { "name": "VS Code", "role": "Primary IDE", "icon": "bx bxl-visual-studio", "color": "#007acc" }
+  ]
+}

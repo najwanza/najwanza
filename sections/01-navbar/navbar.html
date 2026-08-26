@@ -1,0 +1,47 @@
+<!-- ==============================================================================
+     SECTION: NAVBAR & HEADER NAVIGATION
+     Folder: sections/01-navbar/navbar.html
+     Deskripsi: Navigasi utama, logo merek, link navigasi, tombol CLI cepat, & mobile toggle
+     ============================================================================== -->
+
+<header class="dev-navbar">
+    <div class="dev-nav-inner">
+        <!-- Logo & Version Pill -->
+        <a href="#home" class="dev-logo">
+            <div class="dev-logo-icon">
+                <i class="bx bx-terminal"></i>
+            </div>
+            <span>Zakyy.dev</span>
+            <span class="dev-version-pill">v2.4.0</span>
+        </a>
+
+        <!-- Navigation Menu Links -->
+        <ul class="dev-nav-links" id="dev-nav-links">
+            <li class="dev-nav-item"><a href="#home" class="active">Overview</a></li>
+            <li class="dev-nav-item"><a href="#comparison">Comparison</a></li>
+            <li class="dev-nav-item"><a href="#integrations">Integrations</a></li>
+            <li class="dev-nav-item"><a href="#about">About</a></li>
+            <li class="dev-nav-item"><a href="#education">Education</a></li>
+            <li class="dev-nav-item"><a href="#experience">Leadership</a></li>
+            <li class="dev-nav-item"><a href="#skills">Skills</a></li>
+            <li class="dev-nav-item"><a href="#projects">Projects</a></li>
+            <li class="dev-nav-item"><a href="#docs">API Docs</a></li>
+        </ul>
+
+        <!-- Action Buttons -->
+        <div class="dev-nav-actions">
+            <!-- CLI Install Pill Button -->
+            <button class="cli-pill-btn" onclick="document.getElementById('cli-copy-btn').click();" title="Quick Install CLI">
+                <i class="fas fa-terminal"></i>
+                <span>npx najwan-zaki</span>
+            </button>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="menu-toggle-btn" id="menu-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,82 @@
+<!-- ==============================================================================
+     SECTION: CONNECT & COLLABORATE (CONTACT)
+     Folder: sections/12-contact/contact.html
+     Deskripsi: Informasi kontak (email, lokasi, Instagram) & formulir pesan kolaborasi
+     ============================================================================== -->
+
+<section class="dev-section parallax-item" id="contact">
+    <!-- Section Header -->
+    <div class="dev-section-header reveal-on-scroll">
+        <span class="dev-section-tag" id="live-contact-tag"><i class="bx bx-terminal"></i> Initiate Connection</span>
+        <h2 class="dev-section-title" id="live-contact-heading">Connect & Collaborate</h2>
+        <p class="dev-section-desc" id="live-contact-desc">
+            Kirimkan pesan untuk kolaborasi proyek, konsultasi web development, atau pertanyaan lainnya.
+        </p>
+    </div>
+
+    <!-- Contact Wrapper: Info Card + Form Card -->
+    <div class="dev-contact-wrapper">
+        <!-- Contact Info Card -->
+        <div class="dev-bento-card tilt-card-3d delay-1">
+            <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--text-pure); margin-bottom: 0.75rem;" id="live-contact-card-title">Let's Build Something Great!</h3>
+            <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.7; margin-bottom: 2rem;" id="live-contact-card-sub">
+                Saya selalu antusias berdiskusi mengenai proyek web baru, implementasi UI/UX terkini, dan kolaborasi tim.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                <!-- Email -->
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <i class="fas fa-envelope" style="color: var(--syn-string); font-size: 1.2rem;"></i>
+                    <div>
+                        <div style="font-family: var(--font-code); font-size: 0.75rem; color: var(--text-muted);">EMAIL INBOX</div>
+                        <a href="mailto:najwanzaki1230@gmail.com" style="color: var(--text-pure); font-weight: 600; text-decoration: none;" id="live-contact-email">najwanzaki1230@gmail.com</a>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <i class="fas fa-map-marker-alt" style="color: var(--syn-tag); font-size: 1.2rem;"></i>
+                    <div>
+                        <div style="font-family: var(--font-code); font-size: 0.75rem; color: var(--text-muted);">LOCATION</div>
+                        <span style="color: var(--text-pure); font-weight: 600;" id="live-contact-location">Pandeglang, Banten, Indonesia</span>
+                    </div>
+                </div>
+
+                <!-- Instagram -->
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <i class="fab fa-instagram" style="color: var(--syn-fn); font-size: 1.2rem;"></i>
+                    <div>
+                        <div style="font-family: var(--font-code); font-size: 0.75rem; color: var(--text-muted);">INSTAGRAM</div>
+                        <a href="https://www.instagram.com/najwanza_/" target="_blank" rel="noopener noreferrer" style="color: var(--text-pure); font-weight: 600; text-decoration: none;" id="live-contact-instagram">@najwanza_</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="dev-contact-form-card tilt-card-3d delay-2">
+            <form id="dev-contact-form">
+                <div class="dev-form-group">
+                    <label for="dev-name" class="dev-form-label">// Client / Developer Name</label>
+                    <input type="text" id="dev-name" class="dev-form-control" placeholder="e.g. Alex Turner" required>
+                </div>
+                <div class="dev-form-group">
+                    <label for="dev-email" class="dev-form-label">// Return Email Address</label>
+                    <input type="email" id="dev-email" class="dev-form-control" placeholder="e.g. alex@company.dev" required>
+                </div>
+                <div class="dev-form-group">
+                    <label for="dev-subject" class="dev-form-label">// Inquiry Subject</label>
+                    <input type="text" id="dev-subject" class="dev-form-control" placeholder="Frontend Project Collaboration" required>
+                </div>
+                <div class="dev-form-group">
+                    <label for="dev-message" class="dev-form-label">// Project Specifications / Message</label>
+                    <textarea id="dev-message" class="dev-form-control" placeholder="Write your project details or questions here..." required></textarea>
+                </div>
+                <button type="submit" class="btn-dev-primary" style="width: 100%; justify-content: center;">
+                    <i class="fas fa-paper-plane"></i> Execute Send Message (Email)
+                </button>
+                <div id="dev-form-status" style="margin-top: 1rem; font-family: var(--font-code); font-size: 0.85rem; text-align: center; display: none;"></div>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,140 @@
+<!-- ==============================================================================
+     SECTION: HERO SECTION (CODE SNIPPET PREVIEW + CLI QUICKSTART)
+     Folder: sections/02-hero/hero.html
+     Deskripsi: Headline hero, highlight teks mesin tik, tombol aksi/ATS, CLI bar, & Code Editor IDE Window
+     ============================================================================== -->
+
+<section class="dev-hero-section parallax-item" id="home">
+    <div class="dev-hero-grid">
+        
+        <!-- ================= LEFT HERO CONTENT ================= -->
+        <div class="dev-hero-content">
+            <!-- Release Badge Pill -->
+            <div class="dev-release-banner">
+                <span class="dev-release-badge">NEW</span>
+                <span id="live-hero-badge">Soon to be a Frontend Engineering</span>
+            </div>
+
+            <!-- Main Title & Typewriter Text -->
+            <h1 class="dev-hero-title">
+                <span id="live-hero-title-line">Engineered for speed,</span>
+                <span class="hero-typing-wrap">
+                    <span class="highlight-syntax" id="live-hero-highlight">designed for impact.</span>
+                </span>
+            </h1>
+
+            <!-- Subtitle Description -->
+            <p class="dev-hero-subtitle" id="live-hero-subtitle">
+                Portofolio pengembang web modern oleh <strong>Najwan Zaki</strong>. Menghadirkan antarmuka berbasis clean code, SEO semantik, dan pengalaman pengguna tingkat tinggi.
+            </p>
+
+            <!-- CTA Action Buttons -->
+            <div class="dev-hero-actions">
+                <a href="#projects" class="btn-dev-primary">
+                    <i class="fas fa-code-branch"></i> Explore Projects
+                </a>
+                <a href="assets/docs/portfolio-ats.pdf" download="Portfolio-ATS-Najwan-Zaki.pdf" class="btn-dev-secondary" id="btn-download-ats" title="Download Resume / Portfolio ATS Najwan Zaki (PDF)">
+                    <i class="fas fa-file-pdf" style="color: #f87171;"></i> Download Portfolio ATS
+                </a>
+            </div>
+
+            <!-- Quickstart CLI Terminal Bar -->
+            <div class="dev-cli-terminal-bar tilt-card-3d">
+                <div class="cli-code-text" id="cli-text">
+                    <span class="cli-prompt">$</span>
+                    <span>npx najwan-zaki@latest --collaborate</span>
+                </div>
+                <button class="cli-copy-btn" id="cli-copy-btn" title="Copy CLI Command">
+                    <i class="far fa-copy"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- ================= RIGHT CODE PREVIEW IDE WINDOW ================= -->
+        <div class="code-editor-window tilt-card-3d">
+            <!-- Editor Window Header -->
+            <div class="editor-window-header">
+                <!-- Mac-style Traffic Light Buttons -->
+                <div class="editor-traffic-lights">
+                    <span class="traffic-light traffic-red"></span>
+                    <span class="traffic-light traffic-yellow"></span>
+                    <span class="traffic-light traffic-green"></span>
+                </div>
+
+                <!-- Tabs Switcher Bar -->
+                <div class="editor-tabs-bar">
+                    <button class="editor-tab active" data-tab="tab-config">
+                        <i class="bx bxl-typescript" style="color: #3178c6;"></i> najwan.config.ts
+                    </button>
+                    <button class="editor-tab" data-tab="tab-skills">
+                        <i class="bx bxs-file-json" style="color: #f59e0b;"></i> skills.json
+                    </button>
+                    <button class="editor-tab" data-tab="tab-edu">
+                        <i class="bx bxs-data" style="color: #38bdf8;"></i> education.sql
+                    </button>
+                    <button class="editor-tab" data-tab="tab-exp">
+                        <i class="bx bxl-markdown" style="color: #a855f7;"></i> leadership.md
+                    </button>
+                </div>
+            </div>
+
+            <!-- Code Editor Body -->
+            <div class="editor-body">
+                
+                <!-- Snippet 1: najwan.config.ts -->
+                <div class="code-snippet-panel active" id="tab-config">
+                    <div class="code-line"><span class="line-number">1</span><span class="line-content"><span class="syn-c">// @ts-check — Najwan Zaki Developer Configuration</span></span></div>
+                    <div class="code-line"><span class="line-number">2</span><span class="line-content"><span class="syn-k">export default</span> <span class="syn-f">definePortfolio</span>({</span></div>
+                    <div class="code-line"><span class="line-number">3</span><span class="line-content">  <span class="syn-p">name</span>: <span class="syn-s">"Najwan Zaki"</span>,</span></div>
+                    <div class="code-line"><span class="line-number">4</span><span class="line-content">  <span class="syn-p">name school</span>: <span class="syn-s">"Surabaya State University"</span>,</span></div>
+                    <div class="code-line"><span class="line-number">5</span><span class="line-content">  <span class="syn-p">birthday</span>: <span class="syn-s">"30 December 2007"</span>,</span></div>
+                    <div class="code-line"><span class="line-number">6</span><span class="line-content">  <span class="syn-p">role</span>: <span class="syn-s">"Learning to be Frontend Developer"</span>,</span></div>
+                    <div class="code-line"><span class="line-number">7</span><span class="line-content">  <span class="syn-p">location</span>: <span class="syn-s">"Tangerang, Banten, Indonesia"</span>,</span></div>
+                    <div class="code-line"><span class="line-number">8</span><span class="line-content">  <span class="syn-p">status</span>: <span class="syn-s">"Available for High-Impact Projects"</span>,</span></div>
+                    <div class="code-line"><span class="line-number">9</span><span class="line-content">  <span class="syn-p">coreStack</span>: [<span class="syn-s">"HTML5"</span>, <span class="syn-s">"CSS3"</span>, <span class="syn-s">"JavaScript"</span>],</span></div>
+                    <div class="code-line"><span class="line-number">10</span><span class="line-content">  <span class="syn-p">performance</span>: {</span></div>
+                    <div class="code-line"><span class="line-number">11</span><span class="line-content">    <span class="syn-p">responsive</span>: <span class="syn-b">true</span>,</span></div>
+                    <div class="code-line"><span class="line-number">12</span><span class="line-content">    <span class="syn-p">seoOptimized</span>: <span class="syn-b">true</span>,</span></div>
+                    <div class="code-line"><span class="line-number">13</span><span class="line-content">  }</span></div>
+                    <div class="code-line"><span class="line-number">14</span><span class="line-content">});</span></div>
+                </div>
+
+                <!-- Snippet 2: skills.json -->
+                <div class="code-snippet-panel" id="tab-skills">
+                    <div class="code-line"><span class="line-number">1</span><span class="line-content">{</span></div>
+                    <div class="code-line"><span class="line-number">2</span><span class="line-content">  <span class="syn-p">"languages"</span>: {</span></div>
+                    <div class="code-line"><span class="line-number">3</span><span class="line-content">    <span class="syn-p">"HTML5"</span>: <span class="syn-s">"80% (Semantic, Accessibility, SEO)"</span>,</span></div>
+                    <div class="code-line"><span class="line-number">4</span><span class="line-content">    <span class="syn-p">"CSS3"</span>: <span class="syn-s">"60% (Grid, Flexbox, Animations)"</span>,</span></div>
+                    <div class="code-line"><span class="line-number">5</span><span class="line-content">    <span class="syn-p">"JavaScript"</span>: <span class="syn-s">"1% (DOM, Async/Await, APIs)"</span>,</span></div>
+                    <div class="code-line"><span class="line-number">6</span><span class="line-content">  },</span></div>
+                    <div class="code-line"><span class="line-number">7</span><span class="line-content">  <span class="syn-p">"tools"</span>: [<span class="syn-s">"VS Code"</span>, <span class="syn-s">"GitHub"</span>, <span class="syn-s">"Canva"</span>]</span></div>
+                    <div class="code-line"><span class="line-number">8</span><span class="line-content">}</span></div>
+                </div>
+
+                <!-- Snippet 3: education.sql -->
+                <div class="code-snippet-panel" id="tab-edu">
+                    <div class="code-line"><span class="line-number">1</span><span class="line-content"><span class="syn-c">// Education Records & Future Target Aspirations</span></span></div>
+                    <div class="code-line"><span class="line-number">2</span><span class="line-content"><span class="syn-k">SELECT</span> institution, major, period <span class="syn-k">FROM</span> education_journey;</span></div>
+                    <div class="code-line"><span class="line-number">3</span><span class="line-content"><span class="syn-c">/* Output:</span></span></div>
+                    <div class="code-line"><span class="line-number">4</span><span class="line-content"><span class="syn-c">  1 | Surabaya State University| Information Systems | 2026-2030</span></span></div>
+                    <div class="code-line"><span class="line-number">5</span><span class="line-content"><span class="syn-c">  2 | SMAN 1 Pandeglang    | MIPA Science         | 2023-2026</span></span></div>
+                    <div class="code-line"><span class="line-number">6</span><span class="line-content"><span class="syn-c">  3 | SMPN 2 Karang Tanjung| General Studies      | 2020-2023</span></span></div>
+                    <div class="code-line"><span class="line-number">7</span><span class="line-content"><span class="syn-c">  4 | SDN Pagadungan 01    | Primary Foundation   | 2014-2020</span></span></div>
+                    <div class="code-line"><span class="line-number">8</span><span class="line-content"><span class="syn-c">*/</span></span></div>
+                </div>
+
+                <!-- Snippet 4: leadership.md -->
+                <div class="code-snippet-panel" id="tab-exp">
+                    <div class="code-line"><span class="line-number">1</span><span class="line-content"><span class="syn-k"># Leadership & Organization Experience</span></span></div>
+                    <div class="code-line"><span class="line-number">2</span><span class="line-content">- <span class="syn-p">Gerakan Pramuka SMPN 2 Karang Tanjung - Anggota</span>: masa menjabat  2020 - 2023</span></div>
+                    <div class="code-line"><span class="line-number">3</span><span class="line-content">- <span class="syn-p">Pengurus OSIS - Anggota</span>: Seksi Bidang 6 (Kewirausahaan) masa menjabat 2023 - 2024</span></div>
+                    <div class="code-line"><span class="line-number">4</span><span class="line-content">- <span class="syn-p">Karya Ilmiah Remaja (KIR) - Anggota</span>: Masa menjabat (2023 - 2026)</span></div>
+                    <div class="code-line"><span class="line-number">5</span><span class="line-content">- <span class="syn-p">Panitia Sambadha Victory - Sekretaris</span>: Masa menjabat (2025)</span></div>
+                    <div class="code-line"><span class="line-number">6</span><span class="line-content">- <span class="syn-p">Badan Pengurus Harian MPK - Sekretaris</span>: Masa menjabat (2024 - 2025)</span></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>

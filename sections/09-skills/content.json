@@ -1,0 +1,18 @@
+{
+  "tag": "Metrics",
+  "title": "Technical Skill Benchmarks",
+  "desc": "Tingkat kemahiran pada bahasa pemrograman inti, styling, dan alur kerja frontend.",
+  "languages": [
+    { "name": "HTML5 (Semantic & SEO)", "percentage": "80%", "icon": "bx bxl-html5", "color": "#e34f26" },
+    { "name": "CSS3 & Modern Styling", "percentage": "60%", "icon": "bx bxl-css3", "color": "#0ea5e9" },
+    { "name": "JavaScript (ES6+)", "percentage": "1%", "icon": "bx bxl-javascript", "color": "#f7df1e" },
+    { "name": "On Going Learn React.js", "percentage": "0%", "icon": "bx bxl-react", "color": "#38bdf8" }
+  ],
+  "tooling": [
+    { "name": "VS Code", "icon": "bx bxl-visual-studio" },
+    { "name": "Git Versioning", "icon": "bx bxl-git" },
+    { "name": "GitHub CI", "icon": "bx bxl-github" },
+    { "name": "Web Performance", "icon": "bx bx-rocket" },
+    { "name": "Flexbox / Grid", "icon": "bx bx-slider-alt" }
+  ]
+}

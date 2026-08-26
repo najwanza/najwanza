@@ -1,0 +1,37 @@
+{
+  "tag": "Feature Comparison",
+  "title": "Developer Capability Matrix",
+  "desc": "Perbandingan standar pengembangan web konvensional vs arsitektur frontend modern yang dibangun oleh Najwan Zaki.",
+  "features": [
+    {
+      "name": "Semantic HTML5 & Modern SEO Architecture",
+      "desc": "Struktur metadata lengkap, OpenGraph, dan semantik ramah mesin pencari",
+      "zakyy": "Included (Best Practice)",
+      "conventional": "Sering Terabaikan"
+    },
+    {
+      "name": "Fluid Responsive & Mobile Touch Experience",
+      "desc": "Responsif sempurna dari iPhone 375px hingga monitor 4K dengan 60fps",
+      "zakyy": "Native Mobile-First",
+      "conventional": "Rawan Glitch & Overflow"
+    },
+    {
+      "name": "Parallax Motion, Glassmorphism & Micro-animations",
+      "desc": "Transisi halus hardware-accelerated tanpa lag frame-drop",
+      "zakyy": "GPU-Accelerated Smooth",
+      "conventional": "Statis & Kaku"
+    },
+    {
+      "name": "Clean Code & Modular JavaScript (ES6+)",
+      "desc": "Kode rapi, mudah didebug, terstruktur, dan siap diskalakan",
+      "zakyy": "Modular & Clean Code",
+      "conventional": "Spaghetti Code"
+    },
+    {
+      "name": "Organization Leadership & Strong Teamwork",
+      "desc": "Pengalaman memimpin MPK, Pramuka, OSIS, dan kepanitiaan event",
+      "zakyy": "Proven Leadership Track",
+      "conventional": "Hanya Kemampuan Teknis"
+    }
+  ]
+}

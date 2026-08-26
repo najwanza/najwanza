@@ -1,0 +1,35 @@
+{
+  "tag": "Documentation",
+  "title": "Developer Docs & Endpoints",
+  "desc": "Akses cepat ke dokumentasi profil, riwayat pengalaman, dan endpoint komunikasi.",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v1/profile",
+      "title": "Developer Biography",
+      "desc": "Dapatkan ringkasan profil, filosofi pemrograman, dan kapabilitas teknis Najwan Zaki.",
+      "link": "#about"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/skills",
+      "title": "Tech Stack & Benchmarks",
+      "desc": "Eksplorasi daftar teknologi HTML5, CSS3, JavaScript, React, dan tools pengembangan.",
+      "link": "#skills"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/leadership",
+      "title": "Organization Logs",
+      "desc": "Lihat rekam jejak kepemimpinan di Pramuka, OSIS, KIR, Panitia Pensi, dan MPK.",
+      "link": "#experience"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/contact",
+      "title": "Direct Collaboration",
+      "desc": "Kirimkan pesan inquiry proyek atau ajakan kolaborasi langsung ke kotak masuk email.",
+      "link": "#contact"
+    }
+  ]
+}

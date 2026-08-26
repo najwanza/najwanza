@@ -1,0 +1,14 @@
+{
+  "tag": "Developer Profile",
+  "title": "About Najwan Zaki",
+  "desc": "Mengenal lebih dekat dedikasi dan perjalanan saya di dunia web development.",
+  "photo": "assets/images/IMG_0286-removebg-preview (1).png.jpeg",
+  "name": "Najwan Zaki",
+  "role": "I wanna be a Frontend Developer, Data Analyst, IT Analyst, IT Project Manager, or IT Consultant",
+  "bio": "Halo semua! nama saya Mohamad Najwan Zaki saat ini saya berumur 18 tahun dan sedang menjalani pendidikan di Universitas Negeri Surabaya dengan program studi Sistem Informasi. Saya sedang tertarik untuk masuk kedalam dunia coding dan bisnis",
+  "philosophy": {
+    "title": "Why Information Systems?",
+    "paragraph1": "Saya memilih program studi Sistem Informasi bukan hanya semata-mata asal memilih, tapi memiliki beberapa pertimbangan yang membuat saya memilih prodi ini yaitu Sistem Informasi memiliki prospek kerja yang luas karena tidak hanya berkecimpung dalam dunit IT saja, tetapi juga dalam dunia bisnis.",
+    "paragraph2": "Saya memiliki cita-cita menjadi seorang programmer, IT Consultant, IT Analyst, Data Analyst, Bussines Analyst, atau IT Project Manager."
+  }
+}

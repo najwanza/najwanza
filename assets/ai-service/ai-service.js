@@ -36,10 +36,10 @@
 
         education: [
             {
-                institution: "Institut Teknologi Bandung (ITB) / ITS",
-                level: "Target Aspirasi Perguruan Tinggi",
-                major: "Informatika / Software Engineering & Web Architecture",
-                period: "Masa Depan (Aspirasi)",
+                institution: "Universitas Negeri Surabaya",
+                level: "Sedang Menjalani",
+                major: "S1 Sistem Informasi",
+                period: "2026-2030",
                 description: "Target impian untuk memperdalam ilmu Rekayasa Perangkat Lunak, arsitektur cloud, dan sistem komputasi terdistribusi (Aamiin)."
             },
             {
@@ -67,32 +67,32 @@
 
         organizations: [
             {
-                name: "Gerakan Pramuka",
-                role: "Pasukan Inti & Pratama",
+                name: "Dewan Ambalan",
+                role: "Anggota",
                 period: "2020 — 2023",
-                place: "SMPN 2 Karang Tanjung & SDN Pagadungan 01",
+                place: "SMPN 2 Karang Tanjung",
                 focus: "Melatih kepemimpinan (leadership), ketahanan fisik & mental, kedisiplinan, kerjasama tim, navigasi kompas jelajah alam, dan teknik pionering."
             },
             {
                 name: "Pengurus OSIS",
-                role: "Seksi Kreativitas & Keterampilan",
-                period: "2021 — 2022",
-                place: "SMPN 2 Karang Tanjung",
-                focus: "Menginisiasi kegiatan perlombaan classmeeting, peringatan hari besar, kebersihan lingkungan sekolah, dan pengembangan minat bakat seni kesiswaan."
+                role: "Seksi bidang Kewirausahaan (Sekbid 6) ",
+                period: "2023 — 2024",
+                place: "SMAN 1 Pandeglang",
+                focus: "Menginisiasi kegiatan perlombaan classmeeting, berwirausaha, peringatan hari besar, kebersihan lingkungan sekolah, dan pengembangan minat bakat seni kesiswaan."
             },
             {
                 name: "Karya Ilmiah Remaja (KIR)",
-                role: "Anggota Aktif & Riset Teknologi",
-                period: "2023 — Sekarang",
+                role: "Anggota aktif",
+                period: "2023 — 2025",
                 place: "SMAN 1 Pandeglang",
                 focus: "Aktif dalam riset sains, penulisan artikel ilmiah, eksperimen laboratorium, workshop pemrograman, serta membagikan materi dasar web development."
             },
             {
-                name: "Panitia Pentas Seni & HUT Sekolah",
-                role: "Koordinator Tim Desain Visual & Publikasi",
+                name: "Panitia Sambadha Victory",
+                role: "Anggota Divisi Perlengkapan",
                 period: "2024",
                 place: "SMAN 1 Pandeglang",
-                focus: "Perancangan materi visual, banner panggung festival, poster acara, feeds media sosial, dan dokumentasi live performance festival tahunan sekolah."
+                focus: " Anggota tim perlengkapan di event besar dengan audience lebih dari 1000 dan live performance UTOPIA dan Skyline sebagai puncak festival tahunan sekolah."
             },
             {
                 name: "Majelis Perwakilan Kelas (MPK)",

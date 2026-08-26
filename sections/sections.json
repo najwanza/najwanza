@@ -1,0 +1,97 @@
+{
+  "version": "2.0",
+  "description": "Manifest semua section portfolio Najwan Zaki. Gunakan file ini untuk mengetahui urutan dan lokasi setiap bagian.",
+  "sections": [
+    {
+      "id": "01-navbar",
+      "folder": "sections/01-navbar/",
+      "htmlFile": "navbar.html",
+      "sectionId": "navbar",
+      "label": "Navigation Bar"
+    },
+    {
+      "id": "02-hero",
+      "folder": "sections/02-hero/",
+      "htmlFile": "hero.html",
+      "sectionId": "home",
+      "label": "Hero / Landing Screen"
+    },
+    {
+      "id": "03-stats",
+      "folder": "sections/03-stats/",
+      "htmlFile": "stats.html",
+      "sectionId": "stats-bar",
+      "label": "Stats Counter Bar"
+    },
+    {
+      "id": "04-comparison",
+      "folder": "sections/04-comparison/",
+      "htmlFile": "comparison.html",
+      "sectionId": "comparison",
+      "label": "Feature Comparison Matrix"
+    },
+    {
+      "id": "05-integrations",
+      "folder": "sections/05-integrations/",
+      "htmlFile": "integrations.html",
+      "sectionId": "integrations",
+      "label": "Integrated Toolchain & Stack"
+    },
+    {
+      "id": "06-about",
+      "folder": "sections/06-about/",
+      "htmlFile": "about.html",
+      "sectionId": "about",
+      "label": "About Me / Developer Profile"
+    },
+    {
+      "id": "07-education",
+      "folder": "sections/07-education/",
+      "htmlFile": "education.html",
+      "sectionId": "education",
+      "label": "Education Journey Timeline"
+    },
+    {
+      "id": "08-experience",
+      "folder": "sections/08-experience/",
+      "htmlFile": "experience.html",
+      "sectionId": "experience",
+      "label": "Organization & Leadership"
+    },
+    {
+      "id": "09-skills",
+      "folder": "sections/09-skills/",
+      "htmlFile": "skills.html",
+      "sectionId": "skills",
+      "label": "Technical Skill Benchmarks"
+    },
+    {
+      "id": "10-projects",
+      "folder": "sections/10-projects/",
+      "htmlFile": "projects.html",
+      "sectionId": "projects",
+      "label": "Featured Developer Projects"
+    },
+    {
+      "id": "11-docs",
+      "folder": "sections/11-docs/",
+      "htmlFile": "docs.html",
+      "sectionId": "docs",
+      "label": "Developer Docs & API Endpoints"
+    },
+    {
+      "id": "12-contact",
+      "folder": "sections/12-contact/",
+      "htmlFile": "contact.html",
+      "sectionId": "contact",
+      "label": "Connect & Collaborate"
+    },
+    {
+      "id": "13-footer",
+      "folder": "sections/13-footer/",
+      "htmlFile": "footer.html",
+      "sectionId": "footer",
+      "label": "Site Footer"
+    }
+  ]
+}

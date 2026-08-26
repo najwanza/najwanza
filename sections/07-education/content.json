@@ -1,0 +1,35 @@
+{
+  "tag": "Academic Path",
+  "title": "Education Journey",
+  "desc": "Jejak akademik dan aspirasi studi masa depan di bidang Informatika & Software Engineering.",
+  "schools": [
+    {
+      "institution": "Universitas Negeri Surabaya",
+      "major": "Undergraduate Information Systems",
+      "period": "2026 - 2030",
+      "desc": "Target impian untuk memperdalam ilmu Rekayasa Perangkat Lunak, arsitektur cloud, dan sistem komputasi terdistribusi (Aamiin).",
+      "logo": "assets/images/logo-removebg-preview.png"
+    },
+    {
+      "institution": "SMAN 1 Pandeglang",
+      "major": "Sekolah Menengah Atas (MIPA)",
+      "period": "2023 — 2026",
+      "desc": "Mempelajari sains, logika matematika, dan aktif mengikuti organisasi sebagai wadah untuk melatih jiwa kepemimpinan dan problem solving.",
+      "logo": "assets/images/Sambadha.png"
+    },
+    {
+      "institution": "SMPN 2 Karang Tanjung",
+      "major": "Sekolah Menengah Pertama",
+      "period": "2020 — 2023",
+      "desc": "Menumbuhkan ketertarikan awal pada teknologi informasi, komputer, dan dasar-dasar jiwa kepemimpinan melalui Dewan Penggalang.",
+      "logo": "assets/images/Tut Wuri Handayani SMP.png"
+    },
+    {
+      "institution": "SDN Pagadungan 01",
+      "major": "Sekolah Dasar",
+      "period": "2014 — 2020",
+      "desc": "Fondasi awal pendidikan, kedisiplinan belajar.",
+      "logo": "assets/images/logo sd.png"
+    }
+  ]
+}

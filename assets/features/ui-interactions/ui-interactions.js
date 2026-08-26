@@ -162,23 +162,9 @@ function initUIInteractions() {
         });
     }
 
-    // 9. SCROLL REVEAL ANIMATIONS (INTERSECTION OBSERVER)
-    const revealElements = document.querySelectorAll('.reveal-on-scroll, .reveal-left, .reveal-right, .reveal-scale');
+    // 9. SCROLL REVEAL OBSERVER (Delegated to bidirectional parallax-tilt engine)
+    // Synchronized with assets/features/parallax-tilt/parallax-tilt.js
 
-    if ('IntersectionObserver' in window && revealElements.length > 0) {
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('revealed');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
-
-        revealElements.forEach(el => revealObserver.observe(el));
-    } else {
-        revealElements.forEach(el => el.classList.add('revealed'));
-    }
 
     // 10. ACTIVE SECTION NAV TRACKING (SCROLL SPY)
     const allSectionIds = ['home', 'comparison', 'integrations', 'about', 'education', 'experience', 'skills', 'projects', 'docs', 'contact'];

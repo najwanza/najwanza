@@ -11,10 +11,19 @@ function initHeroTypewriter() {
     if (!heroHighlightEl) return;
 
     const texts = [
-        'designed for impact.',
-        'built with passion.',
-        'crafted with precision.',
-        'shipped with care.'
+        'IT Analyst.',
+        'IT Consultant .',
+        'IT Project Manager.',
+        'IT Bussiness.',
+        'Full stack Developer.',
+        'Front end Developer.',
+        'Data Analyst.',
+        'Data Scientist.',
+        'Machine Learning Engineer.',
+        'AI Engineer.',
+        'Cloud Engineer.',
+        'DevOps Engineer.',
+        'Cybersecurity Specialist.',
     ];
     let textIdx = 0;
     let charIdx = 0;

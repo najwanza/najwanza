@@ -1,0 +1,47 @@
+{
+  "tag": "Leadership",
+  "title": "Organization & Leadership",
+  "desc": "Peran aktif kepemimpinan dan kolaborasi dalam berbagai organisasi kesiswaan.",
+  "organizations": [
+    {
+      "id": "org-pramuka",
+      "tab": "Pramuka (2022-2023)",
+      "title": "Dewan Penggalang - Anggota",
+      "period": "SMPN 2 Karang Tanjung (2022 - 2023)",
+      "desc": "Melatih jiwa kepemimpinan (leadership), ketahanan fisik dan mental, kedisiplinan, kerjasama tim, navigasi kompas jelajah alam, serta teknik tali-temali perkemahan.",
+      "photoDir": "assets/images/org/pramuka/"
+    },
+    {
+      "id": "org-osis",
+      "tab": "OSIS (2023-2024)",
+      "title": "Pengurus OSIS — Seksi Bidang Kewirausahaan (Sekbid 6)",
+      "period": "SMAN 1 Pandeglang (2023 - 2024)",
+      "desc": "Menginisiasi dan mengkoordinasikan kegiatan perlombaan antar-kelas (classmeeting), berwirausaha, kebersihan lingkungan sekolah, dan kegiatan pengembangan minat bakat seni kesiswaan.",
+      "photoDir": "assets/images/org/osis/"
+    },
+    {
+      "id": "org-kir",
+      "tab": "KIR (2023-2025)",
+      "title": "Karya Ilmiah Remaja (KIR) — Riset & Teknologi",
+      "period": "SMAN 1 Pandeglang (2023 - 2025)",
+      "desc": "Aktif dalam riset sains, penulisan artikel ilmiah.",
+      "photoDir": "assets/images/org/kir/"
+    },
+    {
+      "id": "org-pensi",
+      "tab": "Panitia Sambadha Victory (2024)",
+      "title": "Panitia Pentas Sambadha Victory — Divisi Perlengkapan",
+      "period": "SMAN 1 Pandeglang (2024)",
+      "desc": "Anggota tim perlengkapan di event besar dengan audience lebih dari 1000 dan live performance UTOPIA dan Skyline sebagai puncak festival tahunan sekolah.",
+      "photoDir": "assets/images/org/pensi/"
+    },
+    {
+      "id": "org-mpk",
+      "tab": "MPK (2024-2025)",
+      "title": "Pengurus Majelis Perwakilan Kelas (MPK) — Sekretaris",
+      "period": "SMAN 1 Pandeglang (2024 - 2025)",
+      "desc": "Pengelolaan administrasi dan kearsipan organisasi MPK, menyusun proposal resmi, notulensi rapat pleno, dan menjembatani aspirasi siswa kepada pihak sekolah.",
+      "photoDir": "assets/images/org/mpk/"
+    }
+  ]
+}

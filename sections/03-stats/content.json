@@ -1,0 +1,8 @@
+{
+  "stats": [
+    { "countTo": 1, "suffix": "±", "label": "Tahun Belajar" },
+    { "countTo": 4, "suffix": "", "label": "Pengalaman Organisasi" },
+    { "countTo": 2, "suffix": "+", "label": "Proyek Diselesaikan" },
+    { "countTo": 10, "suffix": "+", "label": "Event Diikuti" }
+  ]
+}

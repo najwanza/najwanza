@@ -1,0 +1,19 @@
+{
+  "brand": {
+    "name": "Zakyy.dev",
+    "version": "v2.4.0",
+    "icon": "bx bx-terminal"
+  },
+  "navLinks": [
+    { "label": "Overview", "href": "#home" },
+    { "label": "Comparison", "href": "#comparison" },
+    { "label": "Integrations", "href": "#integrations" },
+    { "label": "About", "href": "#about" },
+    { "label": "Education", "href": "#education" },
+    { "label": "Leadership", "href": "#experience" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "API Docs", "href": "#docs" }
+  ],
+  "quickCommand": "npx najwan-zaki"
+}

@@ -1,0 +1,15 @@
+{
+  "copyright": "© 2024 — 2026 Najwan Zaki. Built with Tailwind CSS, React 18, and 3D Parallax Motion.",
+  "links": [
+    { "label": "Overview", "href": "#home" },
+    { "label": "Comparison Matrix", "href": "#comparison" },
+    { "label": "Ecosystem", "href": "#integrations" },
+    { "label": "About", "href": "#about" },
+    { "label": "Education", "href": "#education" },
+    { "label": "Leadership", "href": "#experience" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "API Docs", "href": "#docs" },
+    { "label": "GitHub", "href": "https://github.com/Zakyyii", "external": true }
+  ]
+}

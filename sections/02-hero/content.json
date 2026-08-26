@@ -1,0 +1,16 @@
+{
+  "badge": "Soon to be a Frontend Engineering",
+  "titleLine": "Engineered for speed,",
+  "highlight": "designed for impact.",
+  "subtitle": "Portofolio pengembang web modern oleh Najwan Zaki. Menghadirkan antarmuka berbasis clean code, SEO semantik, dan pengalaman pengguna tingkat tinggi.",
+  "atsPdfPath": "assets/docs/portfolio-ats.pdf",
+  "cliCommand": "npx najwan-zaki@latest --collaborate",
+  "codeEditor": {
+    "name": "Najwan Zaki",
+    "university": "Surabaya State University",
+    "birthday": "30 December 2007",
+    "role": "Learning to be Frontend Developer",
+    "location": "Tangerang, Banten, Indonesia",
+    "coreStack": ["HTML5", "CSS3", "JavaScript"]
+  }
+}
